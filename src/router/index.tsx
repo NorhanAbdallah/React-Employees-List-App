@@ -2,13 +2,13 @@ import React from 'react';
 import {Box} from '@material-ui/core';
 import {RouteObject, useRoutes} from 'react-router';
 import {Paths} from './paths';
-import EmployeesList from '../view/employees-list';
+import Landing from '../view/landing';
 
 export default function Routes() {
   const routes: RouteObject[] = [
     {
       path: Paths.HOME,
-      element: <EmployeesList />,
+      element: <Landing />,
     },
   ];
   const pages = useRoutes(routes);
