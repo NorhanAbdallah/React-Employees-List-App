@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStyles} from './styles';
 import {$enum} from 'ts-enum-util';
-import {States} from '../../../../models/states';
+import {States} from '../../../../models/list';
 
 export default function StatesBar() {
   const classes = useStyles();

@@ -5,3 +5,7 @@ export enum States {
   ACTIVE = 'ACTIVE',
   INACTIVE = 'INACTIVE',
 }
+export interface HeadCell {
+  id: string;
+  label: string;
+}

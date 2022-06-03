@@ -48,7 +48,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
     zIndex: '2',
     width: '50px',
     height: '50px',
-    border: `3px solid ${theme.palette.grey[600]}`,
+    border: `3px solid ${theme.palette.grey[700]}`,
     background: 'transparent',
     borderRadius: '6px',
     transform: 'rotate(45deg)',

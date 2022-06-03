@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
   navBar: {
     display: 'flex',
     height: theme.spacing(18),
-    position: 'fixed',
+    position: 'sticky',
     width: '100%',
     backgroundColor: theme.palette.secondary.main,
     zIndex: 1,

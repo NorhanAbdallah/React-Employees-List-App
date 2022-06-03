@@ -17,8 +17,13 @@ export const lightTheme = createTheme({
       400: '#eaeaea',
       500: '#e4e4e4',
       600: '#ffffffab',
+      700: '#cacaca5e',
+    },
+    background: {
+      default: '#efefef',
     },
   },
+
   typography: {
     htmlFontSize: 16,
     fontSize: 14,

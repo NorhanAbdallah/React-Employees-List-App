@@ -2,16 +2,16 @@ import {makeStyles} from '@mui/styles';
 import {Theme} from '@mui/material';
 
 export const useStyles = makeStyles((theme: Theme) => ({
-  navBar: {
+  nameWrapper: {
     display: 'flex',
-    height: theme.spacing(18),
-    position: 'sticky',
-    width: '100%',
-    zIndex: 1,
-    backgroundColor: theme.palette.secondary.main,
+    alignItems: 'center',
   },
-  logo: {
-    width: theme.spacing(36),
-    marginLeft: theme.spacing(5),
+  tableHead: {
+    background: theme.palette.grey[700],
+  },
+  toolBarTitle: {
+    color: theme.palette.secondary.main,
+    fontWeight: 700,
+    fontSize: theme.spacing(6),
   },
 }));
