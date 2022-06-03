@@ -16,6 +16,7 @@ export const lightTheme = createTheme({
       300: '#f8f8fa',
       400: '#eaeaea',
       500: '#e4e4e4',
+      600: '#ffffffab',
     },
   },
   typography: {
