@@ -7,7 +7,11 @@ simple employees list project written in react, typescript.
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn install`
+
+Installs node modules
+
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000/employees](http://localhost:3000/employees) to view homePage it in the browser.
