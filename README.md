@@ -72,4 +72,7 @@ Open [http://localhost:3000/employees](http://localhost:3000/employees) to view 
 - clsx
 - eslint
 
+## Server
+
+used [mockApi](https://mockapi.io/) to mock employees data
 
