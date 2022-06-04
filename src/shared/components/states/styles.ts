@@ -22,10 +22,6 @@ export const useStyles = makeStyles((theme: Theme) => ({
       lineHeight: '1.250em',
     },
   },
-  complete: {
-    backgroundColor: '#ede8e8',
-    color: 'black',
-  },
   arrowWrapper: {
     position: 'absolute',
     top: theme.spacing(0),
@@ -48,11 +44,11 @@ export const useStyles = makeStyles((theme: Theme) => ({
     borderRadius: '6px',
     transform: 'rotate(45deg)',
     '&.active': {
-      background: `#0056ff !important`,
+      background: `#0082ff !important`,
     },
   },
   active: {
-    backgroundColor: '#0056ff',
+    backgroundColor: '#0082ff',
     color: 'white',
   },
 }));

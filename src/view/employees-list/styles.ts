@@ -14,4 +14,13 @@ export const useStyles = makeStyles((theme: Theme) => ({
     fontWeight: 700,
     fontSize: theme.spacing(6),
   },
+  dataStateWrapper: {
+    height: '506px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  emptyStateText: {
+    color: '#747474db',
+  },
 }));

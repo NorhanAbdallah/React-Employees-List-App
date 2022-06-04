@@ -1,13 +1,13 @@
 import React from 'react';
 import {useStyles} from './styles';
 import {$enum} from 'ts-enum-util';
-import {States} from '../../../../models/list';
+import {States} from '../../../models/list';
 import clsx from 'clsx';
-import {updateEmployeeState} from '../../../../core/service/employees';
-import {Employee} from '../../../../models/employee';
+import {updateEmployeeState} from '../../../core/service/employees';
 import {useDispatch} from 'react-redux';
+import {StatesProps} from './types';
 
-export default function StatesBar({employee}: {employee: Employee}) {
+export default function StatesBar({employee}: StatesProps) {
   const classes = useStyles();
   const dispatch = useDispatch();
 

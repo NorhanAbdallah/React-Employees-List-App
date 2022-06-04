@@ -2,7 +2,7 @@ import React from 'react';
 import {Box} from '@material-ui/core';
 import {RouteObject, useRoutes} from 'react-router';
 import {Paths} from './paths';
-import Landing from '../view/landing';
+import Landing from '../view';
 
 export default function Routes() {
   const routes: RouteObject[] = [

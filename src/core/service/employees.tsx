@@ -16,8 +16,8 @@ export const fetchEmployees = (dispatch: Dispatch) => {
     .then((data: Array<Employee>) => {
       dispatch(setEmployees(data));
     })
-    .catch(error => {
-      dispatch(setError(error));
+    .catch(() => {
+      dispatch(setError(true));
     })
     .finally(() => {
       dispatch(setIsLoading(false));

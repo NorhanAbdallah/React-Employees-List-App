@@ -1,6 +1,6 @@
 import React from 'react';
-import {HeadCell} from '../../../../models/list';
-import {Employee} from '../../../../models/employee';
+import {HeadCell} from '../../models/list';
+import {Employee} from '../../models/employee';
 
 export default function useEmployeesList({employees}: {employees: Array<Employee>}) {
   const headCells: HeadCell[] = [
@@ -19,14 +19,13 @@ export default function useEmployeesList({employees}: {employees: Array<Employee
   ];
 
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
-  const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - employees.length) : 0;
-  const slicedEmployeesData = employees.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
+  const emptyRows = page > 0 ? Math.max(0, (1 + page) * 5 - employees.length) : 0;
+  const slicedEmployeesData = employees.slice(page * 5, page * 5 + 5);
 
-  const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
+  // const handleChangeRowsPerPage = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setRowsPerPage(parseInt(event.target.value, 10));
+  //   setPage(0);
+  // };
   const handleChangePage = (event: unknown, newPage: number) => {
     setPage(newPage);
   };
@@ -35,10 +34,8 @@ export default function useEmployeesList({employees}: {employees: Array<Employee
     page,
     emptyRows,
     headCells,
-    rowsPerPage,
     slicedEmployeesData,
     setPage,
     handleChangePage,
-    handleChangeRowsPerPage,
   };
 }
