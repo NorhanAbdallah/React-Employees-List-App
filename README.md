@@ -17,32 +17,24 @@ Open [http://localhost:3000/employees](http://localhost:3000/employees) to view 
 ├── adapters  // adapters layer
 │   └── rest  //rest adapter to integrate with endpoints
 │       └── index.ts
-
 ├── apis  // api's layer
 │   └── employees.ts // employees apis (list, update,..)
-
 ├── App.tsx
-
 ├── core // project functionalities layer between endpoints and views
 │   ├── service // each module functionality
 │   │   └── employees.tsx 
 │   └── store //each module store using (redux)
 │       ├── employeesSlice.ts
 │       └── employeesStore.ts
-
 ├── index.tsx
-
 ├── models //each project model's types
 │   ├── applications.ts
 │   ├── employee.ts
 │   └── list.ts
-
 ├── react-app-env.d.ts
-
 ├── router //project's routes
 │   ├── index.tsx
 │   └── paths.ts
-
 ├── shared // shared componenst/assets across project
 │   ├── assets
 │   │   └── logo-workmotion.svg
@@ -57,11 +49,9 @@ Open [http://localhost:3000/employees](http://localhost:3000/employees) to view 
 │           ├── index.tsx
 │           ├── styles.ts
 │           └── types.ts
-
 ├── theme // project's themes
 │   ├── index.tsx
 │   └── theme.ts
-
 └── view // views layer that contains all each module view layer 
     ├── employees-list
     │   ├── index.tsx
