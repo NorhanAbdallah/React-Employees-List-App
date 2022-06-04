@@ -13,7 +13,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000/employees](http://localhost:3000/employees) to view homePage it in the browser.
 
 ## Project Structure
-
+```
 ├── adapters  // adapters layer
 │   └── rest  //rest adapter to integrate with endpoints
 │       └── index.ts
@@ -59,7 +59,7 @@ Open [http://localhost:3000/employees](http://localhost:3000/employees) to view 
     │   ├── useEmployeesList.ts
     │   └── wrapper.tsx
     └── index.tsx
-
+```
 ## Libraries used
 
 - react
