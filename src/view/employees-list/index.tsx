@@ -55,7 +55,7 @@ export default function EmployeesList() {
                               src={employee.avatar}
                               alt={employee.firstName + employee.lastName}
                             />
-                            <Typography ml={2}>{employee.firstName + employee.lastName}</Typography>
+                            <Typography ml={2}>{`${employee.firstName} ${employee.lastName}`}</Typography>
                           </Box>
                         </TableCell>
                         <TableCell align="left">{employee.country}</TableCell>
