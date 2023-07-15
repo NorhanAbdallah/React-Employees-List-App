@@ -1,5 +1,5 @@
-import {makeStyles} from '@mui/styles';
-import {Theme} from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import { Theme } from '@mui/material';
 
 export const useStyles = makeStyles((theme: Theme) => ({
   navProgress: {
@@ -18,7 +18,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
       padding: '14px 0',
       color: 'black',
       textAlign: 'center',
-      fontSize: '1.125em',
+      fontSize: '0.75rem',
       lineHeight: '1.250em',
     },
   },

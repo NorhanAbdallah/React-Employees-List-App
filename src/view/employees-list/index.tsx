@@ -1,6 +1,6 @@
 import React from 'react';
-import {Avatar, Box, Table, TableHead, Typography} from '@mui/material';
-import {useStyles} from './styles';
+import { Avatar, Box, Table, TableHead, Typography } from '@mui/material';
+import { useStyles } from './styles';
 import StatesBar from '../../shared/components/states';
 import Paper from '@mui/material/Paper';
 import Toolbar from '@mui/material/Toolbar';
@@ -10,30 +10,30 @@ import TableCell from '@mui/material/TableCell';
 import TableBody from '@mui/material/TableBody';
 import TablePagination from '@mui/material/TablePagination';
 import useEmployeesList from './useEmployeesList';
-import {useDispatch, useSelector} from 'react-redux';
-import {Employee} from '../../models/employee';
-import {setIsStateUpdated, State} from '../../core/store/employeesSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { Employee } from '../../models/employee';
+import { setIsStateUpdated, State } from '../../core/store/employeesSlice';
 import Wrapper from './wrapper';
 import CustomSnackbar from '../../shared/components/snackBar';
 
 export default function EmployeesList() {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const employees = useSelector<{employeesData: State}>(
+  const employees = useSelector<{ employeesData: State }>(
     state => state.employeesData.employees,
   ) as Employee[];
-  const isUpdated = useSelector<{employeesData: State}>(
+  const isUpdated = useSelector<{ employeesData: State }>(
     state => state.employeesData.isStateUpdated,
   ) as boolean;
 
-  const {headCells, page, emptyRows, slicedEmployeesData, handleChangePage} = useEmployeesList({
+  const { headCells, page, emptyRows, slicedEmployeesData, handleChangePage } = useEmployeesList({
     employees,
   });
 
   return (
     <Box p={10}>
       <Paper>
-        <Toolbar className={classes.toolBarTitle}>Employees List</Toolbar>
+        <Toolbar className={classes.toolBarTitle}>Employees</Toolbar>
         <Wrapper employeesData={slicedEmployeesData}>
           <React.Fragment>
             <TableContainer>

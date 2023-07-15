@@ -1,3 +1,3 @@
 export const Paths = {
-  HOME: '/employees',
+  HOME: '/',
 };
